@@ -41,15 +41,33 @@ img {
     }
     nb-card {
         height: 100% !important;
-        width: 90% !important;
+        width: 100% !important;
     }
 }
-.imageRadius{
-    width: 405px !important;
-}
+// .imageRadius{
+//     width: 405px !important;
+// }
 @media (max-width: 2200px) {
     nb-card {
-        height: 40rem !important;
+        height: 27rem !important;
     }
     
+}
+
+@media (max-width: 320px) {
+  
+    
+}
+
+.img-container {
+    // display: block;
+    max-width: 100%;
+    width: auto;
+    height: 200px !important;
+    overflow: hidden !important;
+}
+
+.imageRadius {
+    height: auto !important;
+    width: 100% !important;
 }

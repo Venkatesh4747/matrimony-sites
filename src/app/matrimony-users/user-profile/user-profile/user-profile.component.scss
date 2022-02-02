@@ -1,33 +1,60 @@
 :host ::ng-deep {
     nb-card {
-        height: 35rem !important;
+        height: 28rem !important;
         width: 500px !important;
         border-radius: 0.5rem !important;
     }
 
 }
-@media (max-width:320px) {
-    .img-container {
-        display: block;
-        max-width: 100%;
-        overflow: hidden;
-        width: auto;
-        height: 291px !important;
-    }
-    nb-card {
-        height: 27rem !important;
-    }
-}
+// @media (max-width:320px) {
+//     .img-container {
+//         display: block;
+//         max-width: 100%;
+//         overflow: hidden;
+//         width: auto;
+//         height: 291px !important;
+//     }
+//     nb-card {
+//         height: 27rem !important;
+//     }
+// }
+
+// @media (max-width:px) {
+//     .img-container {
+//         display: block;
+//         max-width: 100%;
+//         overflow: hidden;
+//         width: auto;
+//         height: 291px !important;
+//     }
+//     nb-card {
+//         height: 27rem !important;
+//     }
+// }
 
 img {
     border-top-left-radius: 8px !important;
     border-top-right-radius: 8px !important;
 }
-
 .img-container {
     display: block;
     max-width: 100%;
     overflow: hidden;
     width: auto;
     height: 400px;
+}
+
+@media (max-width: 320px) {
+    nb-card {
+        height: 20rem !important;
+    }
+    .img-container {
+        display: block;
+        max-width: 100%;
+        overflow: hidden;
+        width: auto;
+        height: 300px;
+    }
+    
+    
 }
