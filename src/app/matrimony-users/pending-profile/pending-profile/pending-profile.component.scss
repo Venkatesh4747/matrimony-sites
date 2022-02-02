@@ -1,0 +1,97 @@
+:host ::ng-deep {
+    .owl-stage {
+        width: 5559px;
+        transform: translate3d(-2084px, 0px, 0px);
+        transition: all 0.25s ease 0s;
+        padding: 37px !important;
+    }
+    
+    nb-card {
+        overflow: hidden !important;
+        height: 30rem !important;
+        width: 17rem !important;
+        border-radius: 0.5rem !important;
+        
+    }
+    .img-container {
+        // display: block;
+        max-width: 100%;
+        width: auto;
+        height: 300px !important;
+        overflow: hidden !important;
+    }
+
+    img {
+        border-top-left-radius: 8px !important;
+        border-top-right-radius: 8px !important;
+        cursor: pointer;
+    }
+
+    @media (max-width: 320px) {
+        .img-container {
+            height: 300px;
+        }
+        nb-card {
+            height: 100% !important;
+            width: 100% !important;
+        }
+    }
+    @media (max-width: 375px) {
+        nb-card {
+            height: 100% !important;
+            width: 100% !important;
+        }
+    }
+    @media (max-width: 425px) {
+        nb-card {
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        // .owl-carousel.owl-drag .owl-item {
+        //     width: 322.25px !important;
+        //     margin-left: 25px !important;
+        //     margin-right: 30px;
+        // }
+    }
+    @media (max-width: 769px) {
+        nb-card {
+            height: 100% !important;
+            width: 90% !important;
+        }
+    }
+    @media (max-width: 1024px) {
+        nb-card {
+            height: 100% !important;
+            width: 90% !important;
+        }
+    }
+    @media (max-width: 1093px) {
+        nb-card {
+            height: 100% !important;
+            width: 90% !important;
+        }
+    }
+    @media (max-width: 2560px) {
+        .owl-carousel.owl-drag .owl-item {
+            width: 350.25px !important;
+        }
+        nb-card {
+            height: 100% !important;
+            width: 90% !important;
+        }
+    }
+}
+.cardSize {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #e7c8ae;
+}
+
+.marginRight {
+    margin-right: 10px;
+}
+.imageRadius {
+    height: auto !important;
+    width: 100% !important;
+}

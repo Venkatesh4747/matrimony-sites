@@ -1,0 +1,69 @@
+{
+    "userList": [
+        {
+            "userImage": "assets/images/user1.webp",
+            "name": "Nazria",
+            "age": "27 Yrs",
+            "height": "5.2 ft",
+            "address": {
+                "state": "Tamil Nadu",
+                "city": "Chennai",
+                "country": "India"
+            },
+            "language": "Tamil",
+            "caste": "OBC"
+        },
+        {
+            "userImage": "assets/images/user2.jpg",
+            "name": "Priyanka",
+            "age": 27,
+            "height": "5.2 ft",
+            "address": {
+                "state": "Tamil Nadu",
+                "city": "Chennai",
+                "country": "India"
+            },
+            "language": "Tamil",
+            "caste": "OBC"
+        },
+        {
+            "userImage": "assets/images/user3.webp",
+            "name": "Vijay",
+            "age": 27,
+            "height": "5.2 ft",
+            "address": {
+                "state": "Tamil Nadu",
+                "city": "Chennai",
+                "country": "India"
+            },
+            "language": "Tamil",
+            "caste": "OBC"
+        },
+        {
+            "userImage": "assets/images/user3.jpg",
+            "name": "Nazria",
+            "age": 27,
+            "height": "5.2 ft",
+            "address": {
+                "state": "Tamil Nadu",
+                "city": "Chennai",
+                "country": "India"
+            },
+            "language": "Tamil",
+            "caste": "OBC"
+        },
+        {
+            "userImage": "assets/images/user5.jpg",
+            "name": "Nazria",
+            "age": 27,
+            "height": "5.2 ft",
+            "address": {
+                "state": "Tamil Nadu",
+                "city": "Chennai",
+                "country": "India"
+            },
+            "language": "Tamil",
+            "caste": "OBC"
+        }
+    ]
+}

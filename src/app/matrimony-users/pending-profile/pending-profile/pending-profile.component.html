@@ -1,0 +1,39 @@
+<nb-layout>
+    <nb-layout-column>
+        <h3 class="text-black mb-5">My Matches</h3>
+        <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let item of userList; let i = index">
+                <ng-template carouselSlide>
+                    <nb-card>
+                        <div class="img-container">
+                            <img class="imageRadius" [src]="item.userImage" alt="userImage" (click)="clickUser(item)">
+                        </div>
+                        <div class="m-3">
+                            <h4 >{{item.name}}</h4>
+                            <div class="d-flex">
+                                <div>
+                                    <h6>{{item.age}}, {{item.language}}, {{item.caste}}, {{item.degree}}</h6>
+                                    <div>
+                                        <h6>{{item.address.city}}, {{item.address.state}},</h6>
+                                    </div>
+                                    <div>
+                                        <h6>{{item.address.country}}.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="marginRight">
+                                    <button nbButton shape="round" class="w-100" status="warning"
+                                        (click)="clickUser(item)">Yes</button>
+                                </div>
+                                <div>
+                                    <button nbButton shape="round" class="w-100" status="basic">No</button>
+                                </div>
+                            </div>
+                        </div>
+                    </nb-card>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </nb-layout-column>
+</nb-layout>

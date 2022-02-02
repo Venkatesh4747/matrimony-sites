@@ -1,0 +1,62 @@
+<nb-layout>
+    <nb-layout-column>
+        <div class="row">
+            <!-- <nb-card class="col-12"> -->
+                <div class="col-xl-3 col-lg-5 col-md-6 mx-auto col-12">
+                    <div (swipeleft)="onSwipeLeft($event)" (swiperight)="onSwipeRight($event)"
+                    [@cardAnimator]="animationState" (@cardAnimator.done)="resetAnimationState($event)">
+                    <div class="row">
+
+                    <nb-card class="d-flex justify-content-center mx-4">
+                        <nb-card-body class="p-0">
+                            <div class="img-container">
+                                <img width="500" class="imageRadius imageDrag" [src]="userList[index].userImage" alt="userImage">
+                            </div>
+                            <div class="p-3">
+                                <h4>{{userList[index].name}}</h4>
+                                <div class="d-flex">
+                                    <div>
+                                        <h6>{{userList[index].age}}, {{userList[index].language}},
+                                            {{userList[index].caste}},
+                                            {{userList[index].degree}}</h6>
+                                        <div>
+                                            <h6>{{userList[index].address.city}}, {{userList[index].address.state}},</h6>
+                                        </div>
+                                        <div>
+                                            <h6>{{userList[index].address.country}}.</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nb-card-body>
+                       
+                        <nb-card-footer>
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex justify-content-between align-items-center" (click)='startAnimation("shortlist")'>
+                                    <nb-icon icon="star-outline" ></nb-icon>
+                                    <p style="margin: 0 !important;">Short list</p>
+                                </div>
+                                <div class="" style="margin-left: auto;">
+                                    <p class="my-auto fw-bold ms-4">Like her? <button nbButton status="danger" (click)='startAnimation("swipeleft")'>
+                                            <nb-icon icon="close-circle-outline">
+                                            </nb-icon>
+                                        </button>
+                                    </p>
+                                </div>
+                                <div class="col-2">
+                                    <button nbButton status="success" (click)='startAnimation("swiperight")'>
+                                        <nb-icon icon="checkmark-outline">
+                                        </nb-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </nb-card-footer>
+                    </nb-card>
+                    </div>
+                </div>
+                </div>
+     
+            <!-- </nb-card> -->
+        </div>
+    </nb-layout-column>
+</nb-layout>
